@@ -37,7 +37,10 @@ window.addEventListener('load', function() {
 				}
 				
 				if (datoteke.length > 0) {
-					document.querySelector("span[akcija=brisi]").addEventListener("click", brisi);
+					document.querySelectorAll("span[akcija=brisi]").addEventListener("click", brisi);
+					for(var i=0;i < brisanje.length; i++){
+						brisanje[i].addEventListener("click",brisi);
+					}
 				}
 				ugasniCakanje();
 			}
