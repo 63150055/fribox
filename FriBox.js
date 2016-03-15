@@ -76,6 +76,10 @@ function posredujSeznamDatotek(odgovor) {
     })
 }
 
+
+function izbrisiDatoteko(odgovor,datoteka){
+    odgovor.writeHead(200,{"Content-Type"})
+}
 function naloziDatoteko(zahteva, odgovor) {
     var form = new formidable.IncomingForm();
  
